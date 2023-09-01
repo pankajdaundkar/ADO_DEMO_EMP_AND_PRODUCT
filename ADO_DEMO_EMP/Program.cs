@@ -16,7 +16,7 @@ namespace ADO_DEMO_EMP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Product_form());
+            Application.Run(new Form1());
         }
     }
 }

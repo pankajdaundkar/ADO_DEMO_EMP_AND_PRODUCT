@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADO_DEMO_EMP
+namespace ADO_DEMO_EMP.Model
 {
     public class Product_CRUD
     {
@@ -118,7 +118,7 @@ namespace ADO_DEMO_EMP
             return list;
         }
 
-        public DataTable GetAllProducts()
+        public DataTable GetAllProducts() 
         {
             DataTable dt = new DataTable();
             string qry = "select * from Product";
@@ -133,9 +133,7 @@ namespace ADO_DEMO_EMP
             return dt;
         }
 
-        internal List<Category> GetCategory()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
+
 }

@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbcategory = new System.Windows.Forms.ComboBox();
             this.txtpropri = new System.Windows.Forms.TextBox();
+            this.btnclear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             // 
             // btnshowall
             // 
-            this.btnshowall.Location = new System.Drawing.Point(597, 303);
+            this.btnshowall.Location = new System.Drawing.Point(600, 302);
             this.btnshowall.Name = "btnshowall";
             this.btnshowall.Size = new System.Drawing.Size(159, 44);
             this.btnshowall.TabIndex = 31;
@@ -193,11 +194,22 @@
             this.txtpropri.Size = new System.Drawing.Size(276, 20);
             this.txtpropri.TabIndex = 22;
             // 
+            // btnclear
+            // 
+            this.btnclear.Location = new System.Drawing.Point(195, 293);
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(104, 53);
+            this.btnclear.TabIndex = 32;
+            this.btnclear.Text = "Clrar All";
+            this.btnclear.UseVisualStyleBackColor = true;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
+            // 
             // Product_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 378);
+            this.Controls.Add(this.btnclear);
             this.Controls.Add(this.txtproname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -240,5 +252,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbcategory;
         private System.Windows.Forms.TextBox txtpropri;
+        private System.Windows.Forms.Button btnclear;
     }
 }

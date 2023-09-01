@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using ADO_DEMO_EMP.Model;
 
 namespace ADO_DEMO_EMP
 {
@@ -138,6 +139,14 @@ namespace ADO_DEMO_EMP
             dataGridView1.DataSource = table;
         }
 
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+            txtproid.Text = "";
+            txtproname.Text = "";
+            txtpropri.Text = "";
+            dataGridView1.ResumeLayout();    
+            cmbcategory.Refresh();
+        }
     }
 }
 

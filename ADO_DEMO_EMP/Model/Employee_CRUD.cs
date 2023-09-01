@@ -7,10 +7,12 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static ADO_DEMO_EMP.Employee;
-using System.Data;
 
-namespace ADO_DEMO_EMP
+using System.Data;
+using System.Windows.Forms;
+using static ADO_DEMO_EMP.Model.Employee;
+
+namespace ADO_DEMO_EMP.Model
 {
     public class Employee_CRUD
     {
@@ -51,6 +53,8 @@ namespace ADO_DEMO_EMP
             return result;
 
         }
+
+        
 
         public int UpdateProduct(Employee emp)
         {
